@@ -7,9 +7,7 @@ import { userRoute } from './routes/userRoute.js';
 import { residencyRoute } from './routes/residencyRoute.js';
 
 const app = express();
-app.get('*', (req, res) => {
-    res.redirect(308, 'https://locopro-server.vercel.app/');
-  });
+
 
 const PORT = process.env.PORT || 3000
 
